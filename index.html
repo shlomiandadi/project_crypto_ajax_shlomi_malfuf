@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project crypto</title>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon (1).ico" />
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Mochiy+Pop+P+One&family=Open+Sans:wght@300&family=Oswald:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- Coin removal window if five are selected  -->
+  <div class="fiveBars">
+    <div class="row col-md-6 p-3">
+      <h2 class="text-center">Choose coin that you want to unchecked</h2>
+      <ul id="idUlFive">
+        <!-- <li>
+            Comes from a file in js
+          </li> -->
+      </ul>
+      <button class="w-25 btn btn-danger close-btn">Cancel</button>
+    </div>
+  </div>
+  <!-- end Coin removal window if five are selected -->
+
+
+  <div class="loadingScreen">
+    <div class="text-center">
+      <img src="images/loading.gif" width="200">
+      <h2 class="text-white">Loading, please wait...</h2>
+    </div>
+  </div>
+
+  <div class="infoFixed">
+    <div class="infoBox">
+      <img id="idInfoBoxImg" src="" class="w-25">
+      <h2 id="idInfoName">Crypto name</h2>
+      <h3>Price USD: $ <span id="idInfoPriceUsd"></span></h3>
+      <h3>Price EUR: € <span id="idInfoPriceEur"></span></h3>
+      <h3>Price ILS: <span id="idInfoPriceIls"></span> ₪</h3>
+      <button id="closeInfoBtn" class="btn btn-danger">close</button>
+    </div>
+  </div>
+
+  <header class="container-fluid d-flex align-items-center">
+    <div class="container">
+      <h1>Cryptonite</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row navbar align-items-center">
+      <div class="burger col-auto">
+        <i class="fa fa-bars h1 text-light"></i>
+      </div>
+      <nav id="navBarManu" class="col-md-auto nav ">
+        <a href="#" id="homeLink" class="text-dark">coins</a>
+        <a href="#" id="liveGraphLink" class="text-dark">Live reports</a>
+        <a href="#" id="aboutLink" class="text-dark">About</a>
+      </nav>
+      <div class="search col-9 col-md-3 d-flex">
+        <input id="searchInput" type="search" class="form-control">
+        <button id="searchBtn" class="btn btn-success">search</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center p-3" id="idRow">
+
+      <!-- <cards  Comes from a file in js >
+     
+        </div> -->
+
+    </div>
+
+    <div class="graph text-light" id="idGraph">
+      <h2 id="h2Graph">Cois: ---</h2>
+      <div id="chartContainer" style=" max-width: 920px; margin: 0px auto;"></div>
+    </div>
+
+    <!-- div about start -->
+    <div class="about text-center text-light" id="idAbout">
+      <h2 id="titelNameAbout">Shlomi Malfuf</h2>
+      <img id="imgPropile" src="/images/SHLOMI_PROFILE.png" alt="">
+      <article class="aboutMeArticle">
+        <p>Pardes Hanna Karkur | zamir 95 st' | 050-915-9951 | adiphoneseo@gmail.com </p><br><br>
+        <h5> FULLSTACK DEVELOPER </h5>
+        <ul>
+          <p>HTML + CSS3 </p><br>
+          <li>New HTML5 TAGS</li>
+          <li>CSS3 media queries and advanced selectors</li>
+          <li>Dynamic page layouts</li>
+          <li>Bootstrap & flex </li>
+          <br>
+
+          <p>JavaScript + TypeScript</p>
+          <li>Object Oriented </li>
+          <li>Callbacks, Promises, Async Await</li>
+          <li>jQuery</li>
+          <li>Single Page Application foundations </li>
+          <li>Events</li>
+          <li>Ajax (RESTful API) </li>
+          <li>Documentation</li><br>
+
+          <p>LIBRARIES </p><br>
+          <li>bootstrap</li>
+          <li>Jquery</li>
+          <br>
+
+          <p>FRAMEWORKS</p><br>
+          <li>REACT JS + REACT TYPESCRIPT</li>
+          <li>ANGULAR</li>
+          <li>NODE.JS</li>
+          <br>
+        </ul>
+        <br><br>
+        <ul class="social-network social-circle">
+          <li><a href="https://www.facebook.com/profile.php?id=100000515104513" target="_blank" class="icoFacebook"
+              title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ShlomiMalfof" target="_blank" class="icoTwitter" title="Twitter"><i
+                class="fa fa-twitter"></i></a></li>
+          <li><a href="https://github.com/shlomiandadi" target="_blank" class="github" title="github"><i
+                class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/shlomi-malfuf-709961221/" target="_blank" class="icoLinkedin"
+              title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <br><br>
+        <p> Shlomi Malfuf Copyrights &COPY; 2022</p>
+      </article>
+    </div>
+    <!-- div about end -->
+
+  </main>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</body>
+
+</html>
+
+</html>
